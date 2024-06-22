@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mi Pagina Web</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="login.html">Login</a>
+    </nav>
+
+    <div class="home">
+        <section  class="welcome">
+            <div class="welcome-content">
+                <h1> ¡Hola👋! Bienvenidos a mi Web</h1>
+                <hr/>
+            <p> Este es un trabajo ingregador de Desarrollo Web-2024 1C 👨‍💻 </p>
+            </div>
+        </section>    
+        <section class="code-image">    
+            <h2> En este trabajo mostraremos lo aprendido en la materia </h2>
+            <div class="image-container">
+                <img src="../assets/code.jpg" alt="Imagen de programación">
+                <img src="../assets/setup.jpg" alt="Imagen de setup">
+                <img src="../assets/note.jpg" alt="Imagen de una notebook">
+            </div>
+        </section>
+        <section class="list-elements"> 
+            <h2>Lista de Elementos</h2>
+            <ul>
+                <li onclick="toggleLink('alumno')">Alumno</li>
+                    <div id="alumno" class="hidden-link">
+                        <p>Eduardo Salinas</a>
+                    </div>
+                <li onclick="toggleLink('email-link')">Email</li>
+                    <div id="email-link" class="hidden-link">
+                        <p>emsalinas@comunidad.unnoba.edu.ar</a>
+                    </div>
+                <li onclick="toggleLink('linkedin-link')">LinkedIn</li>
+                    <div id="linkedin-link" class="hidden-link">
+                        <a href="https://www.linkedin.com/in/salinas-eduardo/" target="_blank"> Ir a LinkedIn </a>
+                    </div>
+                <li onclick="toggleLink('github-link')">GitHub</li>
+                    <div id="github-link" class="hidden-link">
+                        <a href="https://github.com/eduardo-salinas" target="_blank">Ir a GitHub</a>
+                    </div>
+        </section>
+    </div>
+    <footer class="footer">
+        <small>Sitio diseñado por <a>Eduardo Salinas</a></small>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
